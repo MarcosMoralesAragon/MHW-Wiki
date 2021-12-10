@@ -1,0 +1,11 @@
+<p-card>
+    Listado de monstruos :
+    <div class="grid">
+        <div class="flex" *ngFor="let monstruo of monstruos">
+            <div class="box" (click)="irAMonstruoInfo(monstruo.id)">
+                <img src="{{monstruo.icono}}" class="icono">
+                <div style="text-align: center;"><b>{{monstruo.nombre}}</b></div>
+            </div>
+        </div>    
+    </div>
+</p-card>

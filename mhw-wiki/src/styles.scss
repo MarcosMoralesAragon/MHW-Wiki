@@ -1,5 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-html{
-    background-image: url('./assets/img/fondo.jpg');
+body{
+    background-image: url('assets/img/fondo.jpg');
     background-size: cover;
+}
+#inicio-info .p-card-body {
+    background: rgba(128, 128, 128, 0.671);
+    color: #f4f4f4;
+    border-radius: 10px;
+}
+#card-descripcion .p-card-body{
+    background: #f4f4f4;
+    color: rgba(0, 0, 0, 0.822);
+    border-radius: 10px;
 }

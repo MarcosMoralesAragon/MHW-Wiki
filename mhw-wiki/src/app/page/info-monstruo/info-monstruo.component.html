@@ -1,0 +1,19 @@
+<p-card id="inicio-info">
+    <div class="grid">
+        <img src="{{monstruo[0].imagen}}">
+        <p-card header="Descripción" id="card-descripcion">
+            {{monstruo[0].descripcion}}
+        </p-card>
+        <p-card id="card-descripcion" header="Debilidades" [style]="{'width': '85%'}">
+            <ng-container *ngIf="elementoNoMostrado()">
+                <p> El monstruo no tiene debilidad hacia los siguientes elementos : {{inmunidad}}</p>
+            </ng-container>
+            <p-chart type="doughnut" [data]="stats" [style]="{'width': '100%'}"></p-chart>
+        </p-card>
+        <p-card id="card-descripcion" header="Items" [style]="{'width': '100%'}">
+            <div class="card">
+                <p-chart type="bar" [data]="items"></p-chart>
+            </div>
+        </p-card>
+    </div>
+</p-card>
