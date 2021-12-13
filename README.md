@@ -42,12 +42,10 @@ Esquema con el funcionamiento de la páguina :
 
 ![esquemas](/capturas/esquema.png)
 
-## Instalación de la páguina
+## Instalación de la página
 
 1. Clone el repositorio en una carpeta
 2. Entre en la ruta de la carpeta
 3. Inicie el comando `npm install`
 4. Escriba el comando `npm start`
 5. Ejecute el comando `ng serve --open` para abrir el servidor local de la aplicación
-
-## Funcionamiento
