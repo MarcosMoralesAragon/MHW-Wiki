@@ -41,6 +41,7 @@ Tabla explicativa de los campos de los modelos :
 Funcionamiento de la páguina :
 
 ```mermaid
+
 graph LR
 A[mhw-wiki] --> B(Monstruos)
 A --> C(Items)
