@@ -4,24 +4,24 @@ Mhw - wiki es una wiki local del juego Monster Hunter World. Esta guía nos perm
 
 ![inicio](/capturas/inicio.png)
 
-![monstruos_inicio](capturas/monstruos-inicio.png)
+![monstruos_inicio](/capturas/monstruo-inicio.png)
 
 Los items salen listados y pueden ser filtrado por el nombre del monstruo
 
-![items_inicio](capturas/items-inicio.png)
-![items_filtrado](capturas/items-filtrado.png)
+![items_inicio](/capturas/items-inicio.png)
+![items_filtrado](/capturas/items-filtrado.png)
 
 
 Una vez seleccionado a el monstruo que queremos ver nos saldrá por pantalla : 
 1. Una imagen del monstruo
 2. Una descripción detallada del mismo
 
-	![monstruos_descripcion](capturas/monstruos-descripcion.png)
+![monstruos_descripcion](capturas/monstruo-descripcion.png)
 	
 3. Gráfia con las estadísticas del monstruo ( resistencias a los elementos )
 4. Gráfica con los ratios de drops de los items del monstruo
 
-![monstruos_grafica](capturas/monstruos-grafica.png)
+![monstruos_grafica](capturas/monstruo-grafica.png)
 
 > **Importante:** La guía solo contempla **algunos de los monstruos** del videojuego.
 
