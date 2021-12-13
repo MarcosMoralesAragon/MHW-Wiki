@@ -3,6 +3,7 @@
 Mhw - wiki es una wiki local del juego Monster Hunter World. Esta guía nos permite ver las estadisticas de los monstruos ( resistencias a los elementos ) y un listado de los items de los monstruos introducidos asi como su probabilidad de obtenerlos
 
 ![inicio](/capturas/inicio.png)
+
 ![monstruos_inicio](capturas/monstruos-inicio.png)
 
 Los items salen listados y pueden ser filtrado por el nombre del monstruo
