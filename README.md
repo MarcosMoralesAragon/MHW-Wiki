@@ -2,7 +2,7 @@
 
 ## Video explicativo
 
-[![video_explicativo](https://static.wikia.nocookie.net/monsterhunterespanol/images/d/d9/Monster_Hunter_World_MHW_-_Gameplay_con_anotaciones_Espa%C3%B1ol/revision/latest/scale-to-width-down/340?cb=20170613111114&path-prefix=es)](https://youtu.be/vt5fpE0bzSY)
+[![video_explicativo](/capturas/imagen-video.jpg)](https://youtu.be/TpUmfp9P-X8)
 
 ## Aplicación
 
