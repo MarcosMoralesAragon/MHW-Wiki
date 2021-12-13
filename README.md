@@ -38,18 +38,10 @@ Tabla explicativa de los campos de los modelos :
 |ID Monstruo |- - - - - - - - - X - - - - - - - - -|Identificador del monstruo al que pertenece `Number`|
 |Ratio       |- - - - - - - - - X - - - - - - - - -|Porcentaje de aparicion del item `Number`|
 
-Funcionamiento de la páguina :
+Esquema con el funcionamiento de la páguina :
 
-```mermaid
+![esquemas](/capturas/esquema.png)
 
-graph LR
-A[mhw-wiki] --> B(Monstruos)
-A --> C(Items)
-B --> D(Información,datos y gráficas)
-C --> E(Listado de items)
-E --> F{Filtro}
-F --> G(Item filtrado)
-```
 ## Instalación de la páguina
 
 1. Clone el repositorio en una carpeta
