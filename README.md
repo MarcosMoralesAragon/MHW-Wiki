@@ -1,5 +1,11 @@
 # Monster Hunter World - Wiki
 
+## Video explicativo
+
+[![video_explicativo](https://static.wikia.nocookie.net/monsterhunterespanol/images/d/d9/Monster_Hunter_World_MHW_-_Gameplay_con_anotaciones_Espa%C3%B1ol/revision/latest/scale-to-width-down/340?cb=20170613111114&path-prefix=es)](https://youtu.be/vt5fpE0bzSY)
+
+## Aplicación
+
 Mhw - wiki es una wiki local del juego Monster Hunter World. Esta guía nos permite ver las estadisticas de los monstruos ( resistencias a los elementos ) y un listado de los items de los monstruos introducidos asi como su probabilidad de obtenerlos
 
 ![inicio](/capturas/inicio.png)
