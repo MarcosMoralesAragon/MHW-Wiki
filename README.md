@@ -2,7 +2,7 @@
 
 ## Video explicativo
 
-[![video_explicativo](/capturas/imagen-video.jpg)](https://youtu.be/TpUmfp9P-X8){width='100px'}
+[![video_explicativo](/capturas/imagen-video.jpg)](https://youtu.be/TpUmfp9P-X8)
 
 ## Aplicación
 
