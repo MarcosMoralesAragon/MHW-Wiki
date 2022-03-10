@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { collectionData, Firestore } from '@angular/fire/firestore';
+import { addDoc, collection } from 'firebase/firestore';
+import { Observable } from 'rxjs';
 import { Item } from '../models/item';
 
 @Injectable({
@@ -117,7 +120,7 @@ export class ItemService {
     },{
       id : 18,
       nombre: "Deviljho Scalp",
-      image: "../../assets/img/items/deviljho_scalp.png",
+      image: "../../assets/img/items/deviljho_scalp.jpg",
       idDeDondeViene : 3,
       ratio: 20
     },{
@@ -794,9 +797,21 @@ export class ItemService {
       ratio: 10
     }]  
 
-  constructor() { }
+  constructor(private firestore: Firestore) { }
 
   getItems(){
     return this.items
   }
+  getItemsFirebase(): Observable<Item[]> {
+    const collectionRef = collection(this.firestore, 'items');
+    return collectionData(collectionRef, {idField: 'idFirebase'}) as Observable<Item[]>;
+  }
+
+  async addMonster(item: Item) {
+    try {
+        const docRef = await addDoc(collection(this.firestore, "items"), item);
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }    
+}
 }
