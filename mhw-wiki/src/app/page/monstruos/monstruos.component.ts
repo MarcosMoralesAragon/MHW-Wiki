@@ -10,7 +10,7 @@ import { MonsterService } from 'src/app/services/monster.service';
 })
 export class MonstruosComponent implements OnInit {
 
-  monstruos : Monstruo [] = []
+  monstruos : Monstruo[] = []
 
   constructor(private monstruosService : MonsterService,
               private route:Router) { }
@@ -20,7 +20,10 @@ export class MonstruosComponent implements OnInit {
     this.route.navigateByUrl('info-monstruo')
   }
   ngOnInit(): void {
-    this.monstruos = this.monstruosService.getMonstruos()
+    this.monstruosService.getMonstruosFirebase().subscribe(monstruos =>{
+      console.log(monstruos)
+      this.monstruos = monstruos
+    })
   }
 
 }
