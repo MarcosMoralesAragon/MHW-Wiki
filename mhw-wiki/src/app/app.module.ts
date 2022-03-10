@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {TableModule} from 'primeng/table';
@@ -12,6 +12,14 @@ import { AppComponent } from './app.component';
 import { MonstruosComponent } from './page/monstruos/monstruos.component';
 import { ItemsComponent } from './page/items/items.component';
 import { InfoMonstruoComponent } from './page/info-monstruo/info-monstruo.component';
+
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { environment } from 'src/environments/environment';
+import { provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp } from 'firebase/app';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +36,11 @@ import { InfoMonstruoComponent } from './page/info-monstruo/info-monstruo.compon
     TableModule,
     InputTextModule,
     FormsModule,
-    ChartModule
+    ChartModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

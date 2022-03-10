@@ -21,8 +21,14 @@ export class InfoMonstruoComponent implements OnInit {
   constructor(private monstruoService : MonsterService,
               private itemService : ItemService) { 
     this.idMonstruo = this.monstruoService.eleccionCualVer()
-    this.monstruo = this.monstruoService.getMonstruos().filter(monstruo => monstruo.id == this.idMonstruo)
-    this.listaItems = this.itemService.getItems().filter(item => item.idDeDondeViene == this.idMonstruo)
+    this.monstruoService.getMonstruosFirebase().subscribe(monstruos => {
+      this.monstruo = monstruos.filter(monstruo => monstruo.id == this.idMonstruo)
+      this.chargueTables()
+    })
+    this.itemService.getItemsFirebase().subscribe(items => {
+      this.listaItems = items.filter(item => item.idDeDondeViene == this.idMonstruo)
+      this.chargueTables()
+    })
   }
 
   elementoNoMostrado() : boolean{
@@ -43,7 +49,10 @@ export class InfoMonstruoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
 
+  chargueTables(){
+    
     this.stats = {
       labels: ['Fuego','Agua','Rayo','Hielo','Draco','Veneno','Sueño','Paralisis','Nitro','Aturdimiento'],
       datasets: [
